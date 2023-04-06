@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+<body>
+    <main>
+        <div class="main-page">
+            <img src="{% static 'main/img/officeplan.png' %}" alt="officeplan">
+            <div class="main-buttons">
+                <!--Проход циклом по массивку и создание кнопок на основе данных из этого массива-->
+                {% for ret in place_num %}
+                    <button id="open-modal-btn-{{ ret.place_num }}" class="button{{ ret.place_num }}">
+                        <p>{{ ret.place_num }}</p></button>
+                {% endfor %}
+            </div>
+        <!--Закоментированный код модальных окон-->
+<!--            <div class="modal" id="my-modal">-->
+<!--                <div class="modal_box">-->
+<!--                    <button class="modal_close-btn" id="close-my-modal-btn"></button>-->
+<!--                    <h2 class="modal_title">Место номер 1</h2>-->
+<!--                    <div class="select_stroke">-->
+<!--                        <span class="modal_text">Выберите время:</span>-->
+<!--                        <select class="modal_select"><option>Весь день</option><option>10:00-14:00</option><option>14:00-19:00</option></select>-->
+<!--                    </div>-->
+<!--                    <button class="modal_btn">Забронировать</button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="modal2" id="my-modal2">-->
+<!--                <div class="modal_box2">-->
+<!--                    <button class="modal_close-btn2" id="close-my-modal-btn2"></button>-->
+<!--                    <h2 class="modal_title2">Место номер 2</h2>-->
+<!--                    <div class="select_stroke2">-->
+<!--                        <span class="modal_text2">Выберите время:</span>-->
+<!--                        <select class="modal_select2"><option>14:00-19:00</option></select>-->
+<!--                    </div>-->
+<!--                    <button class="modal_btn2">Забронировать</button>-->
+<!--                </div>-->
+<!--            </div>-->
+    </main>
+    <script>
+<!--Инициация 3х массивов-->
+        let arr_with_0 = [];
+        let arr_with_1 = [];
+        let arr_with_2 = [];
+
+<!--Проход циклам for по переданным значениям и запись в массив с помощью метода push-->
+        {% for reg in place %};
+           arr_with_0.push({{ reg.place_num }});
+        {% endfor %}
+
+        {% for reg in place_id_1 %};
+           arr_with_1.push({{ reg.place_num }});
+        {% endfor %}
+
+        {% for reg in place_id_2 %};
+           arr_with_1.push({{ reg.place_num }});
+        {% endfor %}
+    </script>
+    <script src="{% static 'main/js/main.js' %}">
+    </script>
+</body>
+</html>

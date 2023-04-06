@@ -1,0 +1,6 @@
+[client]
+database = info-bron
+host = 127.0.0.1
+user = root
+password = Vizhivetevalabame1166yanet
+default-character-set = utf8
