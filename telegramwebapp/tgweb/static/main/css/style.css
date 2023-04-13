@@ -15,9 +15,9 @@ main img {
 
 .button1 {
     position: absolute;
-    width: 25px;
-    height: 25px;
-    left: 770px;
+    width: 23px;
+    height: 23px;
+    left: 775px;
     top: 90px;
     border: solid;
     background-color: aliceblue;
@@ -28,13 +28,13 @@ main img {
     position: absolute;
     width: 12.6px;
     height: 28.4px;
-    left: 6px;
-    bottom: -12px;
+    left: 5px;
+    bottom: -9px;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 40px;
 
 }
@@ -49,10 +49,10 @@ main img {
 
 .button2 {
     position: absolute;
-    width: 25px;
-    height: 25px;
-    left: 805px;
-    top: 90px;
+    width: 23px;
+    height: 23px;
+    left: 775px;
+    top: 115px;
     border: solid;
     background-color: aliceblue;
     border-radius: 8px;
@@ -62,13 +62,13 @@ main img {
     position: absolute;
     width: 12.6px;
     height: 28.4px;
-    left: 6px;
-    bottom: -12px;
+    left: 5px;
+    bottom: -9px;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 40px;
 
 }
@@ -82,10 +82,10 @@ main img {
 
 .button3 {
     position: absolute;
-    width: 25px;
-    height: 25px;
-    left: 770px;
-    top: 130px;
+    width: 23px;
+    height: 23px;
+    left: 790px;
+    top: 150px;
     border: solid;
     background-color: aliceblue;
     border-radius: 8px;
@@ -95,13 +95,13 @@ main img {
     position: absolute;
     width: 12.6px;
     height: 28.4px;
-    left: 6px;
-    bottom: -12px;
+    left: 5px;
+    bottom: -9px;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 40px;
 
 }
@@ -115,10 +115,10 @@ main img {
 
 .button4 {
     position: absolute;
-    width: 25px;
-    height: 25px;
-    left: 805px;
-    top: 130px;
+    width: 23px;
+    height: 23px;
+    left: 815px;
+    top: 150px;
     border: solid;
     background-color: aliceblue;
     border-radius: 8px;
@@ -128,13 +128,13 @@ main img {
     position: absolute;
     width: 12.6px;
     height: 28.4px;
-    left: 6px;
-    bottom: -12px;
+    left: 5px;
+    bottom: -9px;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 40px;
 
 }
@@ -146,210 +146,955 @@ main img {
     transition: 0.8s;
 }
 
-.modal { 
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 99998;
-    background-color: rgba(0, 0, 0, .3);
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    overflow-y: auto;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .4s, visibility .4s;
-}
 
-.modal_box {
-    box-sizing: border-box;
+.button5 {
     position: absolute;
-    width: 600px;
-    height: 280px;
-    justify-self: center;
-    top: 320px;
-    background: #FFFFFF;
-    border: 5px solid #000000;
-    border-radius: 20px;
-    box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
-    transform: scale(0);
-    transition: transform .8s;
-}
-
-.modal.open {
-    visibility: visible;
-    opacity: 1;
-}
-
-.modal.open .modal_box {
-    transform: scale(1);
-
-}
-
-.modal_close-btn {
-    width: 25px;
-    height: 25px;
-    position: relative;
-    left: 560px;
-    top: 5px;
+    width: 23px;
+    height: 23px;
+    left: 790px;
+    top: 185px;
+    border: solid;
+    background-color: aliceblue;
     border-radius: 8px;
 }
 
-.modal_close-btn:hover{
-    background-color: blue;
-    border-radius: 10px;
-    transition: 0.8s;
-}
-
-.modal_btn {
-    position: relative;
-    display: block;
-    width: 180px;
-    height: 50px;
-    margin-top: 20px;
-    left: 200px;
-    background: #FFFFFF;
-    border: 3px solid #000000;
-    border-radius: 20px;
-    
-}
-
-.modal_btn:hover{
-    background-color: blue;
-    border-radius: 10px;
-    transition: 0.8s;
-    color: #FFFFFF;
-}
-
-.modal_text{
-    width: 150px;
-    font-size: 25px;
-    margin-top: 30px;
-}
-
-.modal_title{
-    margin: 0;
-    position: relative;
-    left: 175px;
-    font-size: 35px;
-}
-
-.select_stroke{
-    margin-top: 30px;
-    margin-bottom: 40px;
-    position: relative;
-    left: 145px;
-
-}
-
-.modal_select{
-    width: 110px;
-    height: 40px;
-    font-size: 16px;
-}
-
-.modal2 { 
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 99998;
-    background-color: rgba(0, 0, 0, .3);
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    overflow-y: auto;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .4s, visibility .4s;
-}
-
-.modal_box2 {
-    box-sizing: border-box;
+.button5 p{
     position: absolute;
-    width: 600px;
-    height: 280px;
-    justify-self: center;
-    top: 320px;
-    background: #FFFFFF;
-    border: 5px solid #000000;
-    border-radius: 20px;
-    box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
-    transform: scale(0);
-    transition: transform .8s;
-}
+    width: 12.6px;
+    height: 28.4px;
+    left: 5px;
+    bottom: -9px;
 
-.modal2.open {
-    visibility: visible;
-    opacity: 1;
-}
-
-.modal2.open .modal_box2 {
-    transform: scale(1);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
 
 }
 
-.modal_close-btn2 {
-    width: 25px;
-    height: 25px;
-    position: relative;
-    left: 560px;
-    top: 5px;
+
+.button5:hover{
+    background-color: blue !important;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+
+
+.button6 {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 815px;
+    top: 185px;
+    border: solid;
+    background-color: aliceblue;
     border-radius: 8px;
 }
 
-.modal_close-btn2:hover{
-    background-color: blue;
+.button6 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 5px;
+    bottom: -9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+
+}
+
+
+.button6:hover{
+    background-color: blue !important;
     border-radius: 10px;
     transition: 0.8s;
 }
 
-.modal_btn2 {
-    position: relative;
-    display: block;
-    width: 180px;
-    height: 50px;
-    margin-top: 20px;
-    left: 200px;
-    background: #FFFFFF;
-    border: 3px solid #000000;
-    border-radius: 20px;
-    
+
+.button7 {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 770px;
+    top: 208px;
+    border: solid;
+    background-color: aliceblue;
+    border-radius: 8px;
 }
 
-.modal_btn2:hover{
-    background-color: blue;
+.button7 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 5px;
+    bottom: -9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+
+}
+
+
+.button7:hover{
+    background-color: blue !important;
     border-radius: 10px;
     transition: 0.8s;
-    color: #FFFFFF;
 }
 
-.modal_text2 {
-    width: 150px;
-    font-size: 25px;
-    margin-top: 30px;
+
+.button8 {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 770px;
+    top: 233px;
+    border: solid;
+    background-color: aliceblue;
+    border-radius: 8px;
 }
 
-.modal_title2 {
-    margin: 0;
-    position: relative;
-    left: 175px;
-    font-size: 35px;
+.button8 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 5px;
+    bottom: -9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+
 }
 
-.select_stroke2 {
-    margin-top: 30px;
-    margin-bottom: 40px;
-    position: relative;
-    left: 145px;
+
+.button8:hover{
+    background-color: blue !important;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+
+.button9 {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 770px;
+    top: 265px;
+    border: solid;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.button9 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 5px;
+    bottom: -9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
 
 }
 
-.modal_select2 {
-    width: 110px;
-    height: 40px;
-    font-size: 16px;
+
+.button9:hover{
+    background-color: blue !important;
+    border-radius: 10px;
+    transition: 0.8s;
 }
+
+.button10 {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 790px;
+    top: 295px;
+    border: solid;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.button10 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 5px;
+    bottom: -9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+
+}
+
+
+.button10:hover{
+    background-color: blue !important;
+    border-radius: 10px;
+    transition: 0.8s;}
+
+.button11 {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 755px;
+    top: 295px;
+    border: solid;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.button11 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 5px;
+    bottom: -9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+
+}
+
+
+.button11:hover{
+    background-color: blue !important;
+    border-radius: 10px;
+    transition: 0.8s;}
+
+
+
+.button12 {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 730px;
+    top: 295px;
+    border: solid;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.button12 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 5px;
+    bottom: -9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+
+}
+
+
+.button12:hover{
+    background-color: blue !important;
+    border-radius: 10px;
+    transition: 0.8s;}
+
+
+.button13 {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 730px;
+    top: 323px;
+    border: solid;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.button13 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 5px;
+    bottom: -9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+
+}
+
+
+.button13:hover{
+    background-color: blue !important;
+    border-radius: 10px;
+    transition: 0.8s;}
+
+
+.button14 {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 755px;
+    top: 323px;
+    border: solid;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.button14 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 5px;
+    bottom: -9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+
+}
+
+
+.button14:hover{
+    background-color: blue !important;
+    border-radius: 10px;
+    transition: 0.8s;}
+
+
+
+.button15 {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 770px;
+    top: 370px;
+    border: solid;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.button15 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 5px;
+    bottom: -9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+
+}
+
+
+.button15:hover{
+    background-color: blue !important;
+    border-radius: 10px;
+    transition: 0.8s;}
+
+
+.button16 {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 800px;
+    top: 370px;
+    border: solid;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.button16 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 5px;
+    bottom: -9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+
+}
+
+
+.button16:hover{
+    background-color: blue !important;
+    border-radius: 10px;
+    transition: 0.8s;}
+
+
+
+.button17 {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 830px;
+    top: 370px;
+    border: solid;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.button17 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 5px;
+    bottom: -9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+
+}
+
+
+.button17:hover{
+    background-color: blue !important;
+    border-radius: 10px;
+    transition: 0.8s;}
+
+
+.button18 {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 770px;
+    top: 395px;
+    border: solid;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.button18 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 5px;
+    bottom: -9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+
+}
+
+
+.button18:hover{
+    background-color: blue !important;
+    border-radius: 10px;
+    transition: 0.8s;}
+
+
+.button19 {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 800px;
+    top: 395px;
+    border: solid;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.button19 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 5px;
+    bottom: -9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+
+}
+
+
+.button19:hover{
+    background-color: blue !important;
+    border-radius: 10px;
+    transition: 0.8s;}
+
+
+.button20 {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 830px;
+    top: 395px;
+    border: solid;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.button20 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 5px;
+    bottom: -9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+
+}
+
+
+.button20:hover{
+    background-color: blue !important;
+    border-radius: 10px;
+    transition: 0.8s;}
+
+
+.button21 {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    border-radius: 8px;
+    left: 980px;
+    top: 345px;
+    border: solid;
+    background-color: aliceblue;
+}
+
+.button21 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 5px;
+    bottom: -9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+
+.button21:hover{
+    background-color: blue !important;
+    border-radius: 10px;
+    transition: 0.8s;}
+
+
+.button22 {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 1010px;
+    top: 345px;
+    border: solid;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.button22 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 5px;
+    bottom: -9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+
+.button22:hover{
+    background-color: blue !important;
+    border-radius: 5px;
+    transition: 0.8s;}
+
+
+.button23 {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    border-radius: 8px;
+    left: 1010px;
+    top: 375px;
+    border: solid;
+    background-color: aliceblue;
+}
+
+.button23 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 5px;
+    bottom: -9px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+
+.button23:hover{
+    background-color: blue !important;
+    border-radius: 5px;
+    transition: 0.8s;}
+
+
+.button24 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 1003px;
+    top: 238px;
+    border: solid;
+    background-color: aliceblue;
+    border-radius: 4px;
+}
+
+.button24 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 0px;
+    bottom: -11px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 40px;
+}
+
+
+.button24:hover{
+    background-color: blue !important;
+    border-radius: 5px;
+    transition: 0.8s;}
+
+
+.button25 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 1018px;
+    top: 238px;
+    border: solid;
+    background-color: aliceblue;
+    border-radius: 4px;
+}
+
+.button25 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 0px;
+    bottom: -11px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 40px;
+}
+
+
+.button25:hover{
+    background-color: blue !important;
+    border-radius: 5px;
+    transition: 0.8s;}
+
+
+
+.button26 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 4px;
+    left: 1003px;
+    top: 260px;
+    border: solid;
+    background-color: aliceblue;
+
+}
+
+.button26 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 0px;
+    bottom: -11px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 40px;
+}
+
+
+.button26:hover{
+    background-color: blue !important;
+    border-radius: 4px;
+    transition: 0.8s;}
+
+
+
+.button27 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 1018px;
+    top: 260px;
+    border: solid;
+    background-color: aliceblue;
+    border-radius: 4px;
+}
+
+.button27 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 0px;
+    bottom: -11px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 40px;
+}
+
+
+.button27:hover{
+    background-color: blue !important;
+    border-radius: 4px;
+    transition: 0.8s;}
+
+
+
+.button28 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 1040px;
+    top: 237px;
+    border: solid;
+    border-radius: 4px;
+
+}
+
+.button28 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 0px;
+    bottom: -11px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 40px;
+}
+
+
+.button28:hover{
+    background-color: blue !important;
+    border-radius: 4px;
+    transition: 0.8s;}
+
+
+.button29 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 1055px;
+    top: 237px;
+    border: solid;
+    border-radius: 4px;
+
+}
+
+.button29 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 0px;
+    bottom: -11px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 40px;
+}
+
+
+.button29:hover{
+    background-color: blue !important;
+    border-radius: 4px;
+    transition: 0.8s;}
+
+
+.button30 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 1040px;
+    top: 252px;
+    border: solid;
+    border-radius: 4px;
+
+}
+
+.button30 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 0px;
+    bottom: -11px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 40px;
+}
+
+
+.button30:hover{
+    background-color: blue !important;
+    border-radius: 4px;
+    transition: 0.8s;}
+
+
+.button31 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 1055px;
+    top: 252px;
+    border: solid;
+    border-radius: 4px;
+
+}
+
+.button31 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 0px;
+    bottom: -11px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 40px;
+}
+
+
+.button31:hover{
+    background-color: blue !important;
+    border-radius: 4px;
+    transition: 0.8s;}
+
+
+.button32 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 1040px;
+    top: 267px;
+    border: solid;
+    border-radius: 4px;
+
+}
+
+.button32 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 0px;
+    bottom: -11px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 40px;
+}
+
+
+.button32:hover{
+    background-color: blue !important;
+    border-radius: 4px;
+    transition: 0.8s;}
+
+
+.button33 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 1055px;
+    top: 267px;
+    border: solid;
+    border-radius: 4px;
+
+}
+
+.button33 p{
+    position: absolute;
+    width: 12.6px;
+    height: 28.4px;
+    left: 0px;
+    bottom: -11px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 40px;
+}
+
+
+.button33:hover{
+    background-color: blue !important;
+    border-radius: 4px;
+    transition: 0.8s;}

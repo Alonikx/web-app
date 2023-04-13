@@ -1,0 +1,207 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+}
+
+.modal_box {
+    box-sizing: border-box;
+    position: absolute;
+    width: 600px;
+    height: 280px;
+    justify-self: center;
+    top: 320px;
+    background: #FFFFFF;
+    border: 5px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
+    transform: scale(0);
+    transition: transform .8s;
+}
+
+.modal.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal.open .modal_box {
+    transform: scale(1);
+
+}
+
+.modal_close-btn {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: 560px;
+    top: 5px;
+    border-radius: 8px;
+}
+
+.modal_close-btn:hover{
+    background-color: blue;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+
+.modal_btn {
+    position: relative;
+    display: block;
+    width: 180px;
+    height: 50px;
+    margin-top: 20px;
+    left: 200px;
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    border-radius: 20px;
+
+}
+
+.modal_btn:hover{
+    background-color: blue;
+    border-radius: 10px;
+    transition: 0.8s;
+    color: #FFFFFF;
+}
+
+.modal_text{
+    width: 150px;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.modal_title{
+    margin: 0;
+    position: relative;
+    left: 175px;
+    font-size: 35px;
+}
+
+.select_stroke{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    position: relative;
+    left: 145px;
+
+}
+
+.modal_select{
+    width: 110px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.modal2 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+}
+
+.modal_box2 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 600px;
+    height: 280px;
+    justify-self: center;
+    top: 320px;
+    background: #FFFFFF;
+    border: 5px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
+    transform: scale(0);
+    transition: transform .8s;
+}
+
+.modal2.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal2.open .modal_box2 {
+    transform: scale(1);
+
+}
+
+.modal_close-btn2 {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: 560px;
+    top: 5px;
+    border-radius: 8px;
+}
+
+.modal_close-btn2:hover{
+    background-color: blue;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+
+.modal_btn2 {
+    position: relative;
+    display: block;
+    width: 180px;
+    height: 50px;
+    margin-top: 20px;
+    left: 200px;
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    border-radius: 20px;
+
+}
+
+.modal_btn2:hover{
+    background-color: blue;
+    border-radius: 10px;
+    transition: 0.8s;
+    color: #FFFFFF;
+}
+
+.modal_text2 {
+    width: 150px;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.modal_title2 {
+    margin: 0;
+    position: relative;
+    left: 175px;
+    font-size: 35px;
+}
+
+.select_stroke2 {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    position: relative;
+    left: 145px;
+
+}
+
+.modal_select2 {
+    width: 110px;
+    height: 40px;
+    font-size: 16px;
+}
